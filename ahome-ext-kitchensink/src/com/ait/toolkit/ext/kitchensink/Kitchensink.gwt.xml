@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.0//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.6.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='ahome_ext_kitchensink'>
+
+ <inherits name='com.ait.toolkit.sencha.ext.Ext'/> 
+   <inherits name="com.ait.toolkit.sencha.ext.ux.notification.NotificationMin"/> 
+    <inherits name="com.ait.toolkit.sencha.ext.ux.layout.crossfacecard.CrossfaceCardMin"/> 
+    <inherits name="com.ait.toolkit.sencha.ext.ux.callout.CallOutMin"/> 
+    <inherits name="com.ait.toolkit.sencha.ext.ux.calendar.CalendarMin"/> 
+     <!--  inherits name="com.ait.toolkit.ckeditor.CkEditor"/-->
+     <inherits name="com.ait.toolkit.gmaps.GMaps"/>
+ 
+  <entry-point class='com.ait.toolkit.ext.kitchensink.client.Kitchensink'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+
+  <!-- allow Super Dev Mode -->
+  <add-linker name="xsiframe"/>
+</module>
